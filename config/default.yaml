@@ -1,0 +1,7 @@
+url: 'http://localhost:3000/'
+
+keyId:      'KEY_ID'
+teamId:     'TEAM_ID'
+privateKey: 'PRIVATE_KEY'
+
+validateUrl: 'https://api.development.devicecheck.apple.com/v1/validate_device_token'

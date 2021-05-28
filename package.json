@@ -1,0 +1,36 @@
+{
+  "name": "@kravc/api-devices",
+  "version": "1.0.0",
+  "description": "Device token validation service for iOS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,yaml -w ./src --exec NODE_PATH=./ http",
+    "test": "eslint src/ && NODE_APP_INSTANCE=test NODE_PATH=./ nyc mocha \"./src/**/*.spec.js\""
+  },
+  "author": "Oleksandr Kravets <a@kra.vc>",
+  "license": "ISC",
+  "devDependencies": {
+    "@kravc/http": "^0.4.1",
+    "@kravc/serverless": "^0.7.5",
+    "chai": "^4.2.0",
+    "eslint": "^7.13.0",
+    "mocha": "^8.2.1",
+    "nock": "^13.0.11",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "include": "src",
+    "exclude": "**/*.spec.js"
+  },
+  "mocha": {
+    "timeout": 10000
+  },
+  "dependencies": {
+    "@kravc/dos": "^1.4.5",
+    "@kravc/request": "^1.0.0",
+    "config": "^3.3.6",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^3.4.0"
+  }
+}

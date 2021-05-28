@@ -1,0 +1,14 @@
+url: 'https://api.dev.devices.kra.vc/v1/'
+
+aws:
+  region:  'eu-central-1'
+  profile: 'private'
+
+serverless:
+  custom:
+    secrets: ${ssm:/aws/reference/secretsmanager/dev/Portal}
+
+  environment:
+    KEY_ID:      ${self:custom.secrets.devices.keyId}
+    TEAM_ID:     ${self:custom.secrets.devices.teamId}
+    PRIVATE_KEY: ${self:custom.secrets.devices.privateKey}
