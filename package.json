@@ -1,6 +1,6 @@
 {
-  "name": "@kravc/api-devices",
-  "version": "1.0.0",
+  "name": "@kravc/devices",
+  "version": "1.0.1",
   "description": "Device token validation service for iOS.",
   "main": "index.js",
   "scripts": {

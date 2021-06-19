@@ -29,8 +29,8 @@ Create secret via AWS secret manager to include:
 NOTE: Check the tutorial on how to get secret values:
       https://fluffy.es/devicecheck-tutorial/#serverside
 
-Update `serverless.custom.secrets` value to include secret path (`dev/Portal`
-has to be replace):
+Update `serverless.custom.secrets` value to include secret path (`kravc/dev` and
+`kravc/prd` has to be replace with custom values):
 
 - `config/serverless-dev.yaml`
 - `config/serverless-prd.yaml`
@@ -81,4 +81,4 @@ npx info dev
 
 Author: [Alexander Kravets](mailto:a@kra.vc)
 
-Revision: May 28, 2021
+Revision: June 19, 2021

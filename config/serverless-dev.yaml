@@ -6,7 +6,7 @@ aws:
 
 serverless:
   custom:
-    secrets: ${ssm:/aws/reference/secretsmanager/dev/Portal}
+    secrets: ${ssm:/aws/reference/secretsmanager/kravc/dev}
 
   environment:
     KEY_ID:      ${self:custom.secrets.devices.keyId}
